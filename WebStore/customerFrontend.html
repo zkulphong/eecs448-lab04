@@ -1,0 +1,30 @@
+<html>
+    <head>
+      <script type="text/javascript" src="formChecker.js">
+
+      </script>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+
+    <form action="customerBackend.php" method="post" onsubmit="validate(event)">
+      <p>Username</p>
+      Username: <input type="text" name="username" id="username" placeholder="Username"><br><br>
+      <p>Password</p>
+      Password: <input type="text" name="password" id="password" placeholder = "Password"><br><br>
+      <p>Keyboard: $20</p>
+      Quantity: <input type="number" name="keyboard" value="0" id="keyboard"><br><br>
+      <p>Mouse: $5</p>
+      Quantity: <input type="number" name="mouse" value="0" id="mouse"><br><br>
+      <p>Monitor: $30</p>
+      Quantity: <input type="number" name="monitor" value="0" id="monitor"><br><br>
+      <p>Shipping</p>
+      <input type="radio" name="shipping" value="7 Day" checked="checked" id="defaultShipping">Free 7 Day<br>
+      <input type="radio" name="shipping" value="Overnight">$50.00 over night<br>
+      <input type="radio" name="shipping" value="3 Day">$5.00 three day<br><br>
+
+      <input type="button" value="Reset" onclick="reset()">
+      <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
